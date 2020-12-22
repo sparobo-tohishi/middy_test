@@ -1,0 +1,8 @@
+version: '3'
+services:
+  app:
+    container_name: middy_test_app
+    image: middy_test_app:latest
+    build: docker/app
+    volumes:
+      - ./:/opt/app
